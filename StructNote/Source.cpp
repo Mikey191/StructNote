@@ -19,7 +19,7 @@ struct note
 	char number[255];
 	date birthday;
 };
-//Алим
+//Alim
 note add(note* arr, int& size) {
 	note temp;
 	
@@ -37,7 +37,7 @@ note add(note* arr, int& size) {
 	cin >> temp.birthday.year;
 	return temp;
 }
-//Алим
+//Alim
 void addnote(note* arr, int& size) {
 	if (size < 1000)
 	{
@@ -53,7 +53,7 @@ void addnote(note* arr, int& size) {
 	
 }
 
-//Радима
+//Radima
 void deleteNoteName(note* arr, int& size)
 {
 	note temp;
@@ -76,7 +76,7 @@ void deleteNoteName(note* arr, int& size)
 	}
 
 }
-//Радима
+//Radima
 void print(note b) {
 	cout << b.name << " " << "\t";
 	cout << b.lastname << " " << "\t";
@@ -87,7 +87,7 @@ void print(note b) {
 	cout << endl;
 }
 
-//Радима
+//Radima
 void showAllNote(note* arr, int& size) {
 	cout << "\tList note" << endl;
 	for (size_t i = 0; i < size; i++) {
@@ -102,7 +102,7 @@ void showAllNote(note* arr, int& size) {
 	system("pause");
 
 }
-//Игорь
+//Igor
 void loaddata_bin(note* arr, int& size)
 {
 	FILE* f;
@@ -123,7 +123,7 @@ void loaddata_bin(note* arr, int& size)
 	fclose(f);
 	size--;
 }
-//Игорь
+//Igor
 void savedata_bin(note* arr, int& size)
 {
 	FILE* f;
@@ -132,7 +132,7 @@ void savedata_bin(note* arr, int& size)
 	fwrite(&arr[0], sizeof(note), size, f);
 	fclose(f);
 }
-//Алим
+//Alim
 void sortbyyear(note*a, int n) {
 	for (size_t i = 0; i < n - 1; i++)
 		for (size_t j = i + 1; j < n; j++)
@@ -143,7 +143,7 @@ void sortbyyear(note*a, int n) {
 				a[j] = tmp;
 			}
 }
-//Игорь
+//Igor
 void searchByName(note* arr, int& size)
 {
 	note temp;
@@ -164,7 +164,7 @@ void searchByName(note* arr, int& size)
 	}
 	system("pause");
 }
-//Алим
+//Alim
 void searchByLastname(note* arr, int& size)
 {
 	note temp;
@@ -185,7 +185,7 @@ void searchByLastname(note* arr, int& size)
 	}
 	system("pause");
 }
-//Радима
+//Radima
 void searchByNumber(note* arr, int& size)
 {
 	note temp;
@@ -206,7 +206,7 @@ void searchByNumber(note* arr, int& size)
 	}
 	system("pause");
 }
-//Радима Игорь Алим
+//Alim Radima Igor
 int main()
 {
 	const int size = 1000;
